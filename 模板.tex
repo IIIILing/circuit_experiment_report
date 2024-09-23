@@ -1,0 +1,162 @@
+\documentclass[UTF8]{ctexart}
+\usepackage{listings} % 引入listings宏包
+\usepackage{xcolor} % 引入xcolor宏包
+\usepackage{graphicx}
+\usepackage{geometry}
+\geometry{left=2.5cm,right=2.5cm,top=2.5cm,bottom=2.5cm}
+\usepackage{wrapfig}
+\usepackage{enumitem}
+\usepackage{lipsum}
+\lstset{
+  basicstyle=\ttfamily\small, % 使用等宽字体
+  frame=single, % 代码块周围有边框
+  breaklines=true, % 自动换行
+  postbreak=\mbox{\textcolor{red}{$\hookrightarrow$}\space}, % 换行标记
+  showstringspaces=false, % 不显示字符串中的空格
+  commentstyle=\itshape, % 注释样式
+  keywordstyle=\bfseries % 关键字样式
+}
+
+% 自定义命令，定义学号和标题
+\newcommand{\studentnumber}{3200000000}
+% 定义作者信息和学号
+\author{
+  \textbf{专业：}电子信息工程 \\[2ex]
+  \textbf{姓名:} iiiiling\\[2ex]
+  \textbf{学号：}\studentnumber \\[2ex]
+  \textbf{日期：}2024.9.23\\[2ex]%日期
+  \textbf{地点：}东三-202\\[2ex]%地点
+}
+\title{
+    \begin{figure}[htbp]
+        \centering
+        \includegraphics[width=0.8\textwidth]{img.png}
+    \end{figure}
+}
+% 定义作者信息和学号
+
+\begin{document}
+
+\maketitle
+
+\pagestyle{empty} % 设置后续页面的样式为 'empty'
+% 双栏排版
+
+\noindent % 确保没有缩进
+
+\begin{minipage}[t]{0.45\textwidth}
+\begin{enumerate}
+    \item[1.] 课程名称：电路电子技术实验
+    \item[2.] 指导老师：张伟
+    \item[3.] 成绩：100
+    \item[4.] 实验名称： 
+    \item[5.] 实验类型：
+    \item[6.] 同组学生姓名：syz
+\end{enumerate}
+\end{minipage}%
+\hfill % 添加一些空间，这一段谨慎添加空行
+\begin{minipage}[t]{0.45\textwidth}
+\begin{enumerate}
+    \item[一.] 实验目的和要求
+    \item[二.] 实验内容和原理
+    \item[三.] 主要仪器设备
+    \item[四.] 操作方法和实验步骤
+    \item[五.] 实验数据记录和处理
+    \item[六.] 实验结果与分析
+    \item[七.] 讨论、心得
+\end{enumerate}
+\end{minipage}
+
+\vspace{1cm}
+
+\noindent % 确保没有缩进
+\hfill % 添加一些空间
+% 上面这一段可以删掉，本来要写一个目录的，但是就两页纸写什么目录。
+% 但是单单左边那一列太单调了，所以拿来凑数，算是一个不合格的目录，删了无妨。
+
+
+\centerline{\Large{ 实验一 :直流电压电流和电阻的测量}}
+
+\section{实验目的}
+% 如果你不喜欢这个编号，可以用*取消编号
+\subsection{}
+\subsection{}
+\subsection{}
+
+\section{实验内容和原理}
+\subsection{}
+\subsection{}
+\subsection{}
+
+\section{主要仪器设备}
+
+\subsection{}
+
+\subsection{}
+
+\subsection{}
+
+\section{实验内容}
+
+\subsection{实验内容1的实验方法、步骤、数据记录、数据处理、实验结果分析}
+
+\subsection{实验内容2的实验方法、步骤、数据记录、数据处理、实验结果分析}
+
+\subsection{实验内容3的实验方法、步骤、数据记录、数据处理、实验结果分析}
+
+\section{实验结果}
+
+\section{讨论、心得}
+
+% 参考
+
+\section{参考代码}
+
+\subsection{数学公式}
+
+微积分：$\int_{a}^{b} f(x)dx$ \par
+曲线积分：$\oint_{C} f(x,y)ds$ \par
+累加：$\sum_{i=1}^{n} a_i$ \par
+leq：$\leq$ \par
+geq：$\geq$ \par
+neq：$\neq$ \par
+infty：$\infty$ \par
+极限：$\lim_{x \to \infty} f(x)$ \par
+数列：$a_1, a_2, a_3, \ldots, a_n$ \par
+求导：$\frac{dy}{dx}$ \par
+偏导：$\frac{\partial f}{\partial x}$ \par
+分数：$\frac{a}{b}$ \par
+开方：$\sqrt{2}$ \par
+
+
+\subsection{插入代码}
+
+\begin{lstlisting}[language=Python]
+    def hello_world():
+        print("Hello, World!")
+\end{lstlisting}
+
+\subsection{表格}
+\begin{table}[htbp]
+    \centering
+    \begin{tabular}{|c|c|c|}
+        \hline
+        1 & 2 & 3 \\
+        \hline
+        4 & 5 & 6 \\
+        \hline
+        7 & 8 & 9 \\
+        \hline
+    \end{tabular}
+    \caption{表格标题}
+    \label{tab:1}
+\end{table}
+\subsection{图片}
+\begin{figure}[htbp]
+    \centering
+    \includegraphics[width=0.5\textwidth]{img.png}
+    \caption{图片标题}
+    \label{fig:1}
+\end{figure}
+
+\end{document}
