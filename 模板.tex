@@ -18,13 +18,13 @@
 }
 
 % 自定义命令，定义学号和标题
-\newcommand{\studentnumber}{3200000000}
+\newcommand{\studentnumber}{3230102986}
 % 定义作者信息和学号
 \author{
-  \textbf{专业：}电子信息工程 \\[2ex]
-  \textbf{姓名:} iiiiling\\[2ex]
+  \textbf{专业：}电气工程及其自动化 \\[2ex]
+  \textbf{姓名:} 刘云轩\\[2ex]
   \textbf{学号：}\studentnumber \\[2ex]
-  \textbf{日期：}2024.9.23\\[2ex]%日期
+  \textbf{日期：}2024.19.28\\[2ex]%日期
   \textbf{地点：}东三-202\\[2ex]%地点
 }
 \title{
@@ -48,10 +48,10 @@
 \begin{enumerate}
     \item[1.] 课程名称：电路电子技术实验
     \item[2.] 指导老师：张伟
-    \item[3.] 成绩：100
-    \item[4.] 实验名称： 
+    \item[3.] 成绩：
+    \item[4.] 实验名称： 一阶RC电路的暂态响应
     \item[5.] 实验类型：
-    \item[6.] 同组学生姓名：syz
+    \item[6.] 同组学生姓名：
 \end{enumerate}
 \end{minipage}%
 \hfill % 添加一些空间，这一段谨慎添加空行
@@ -75,30 +75,64 @@
 % 但是单单左边那一列太单调了，所以拿来凑数，算是一个不合格的目录，删了无妨。
 
 
-\centerline{\Large{ 实验一 :直流电压电流和电阻的测量}}
+\centerline{\Large{ 实验八：一阶RC电路的暂态响应 }}
 
 \section{实验目的}
 % 如果你不喜欢这个编号，可以用*取消编号
-\subsection{}
-\subsection{}
-\subsection{}
+\subsection{熟悉一阶RC电路的零状态响应、零输入响应和全
+响应。
+}
+\subsection{研究一阶电路在阶跃激励和方波激励情况下，响    
+应的基本规律和特点。
+}
+\subsection{掌握积分电路和微分电路的基本概念。
+}
+\subsection{从响应曲线中求出RC电路时间常数$\tau $}
 
 \section{实验内容和原理}
-\subsection{}
-\subsection{}
-\subsection{}
+\subsection{零输入响应：指输入为零，初始状态不为零所 
+引起的电路响应。
+}
+\begin{figure}[htbp]
+    \centering
+    \includegraphics[width=0.5\textwidth]{img1.png}
+    \caption{零输入响应}
+    \label{fig:2}
+\end{figure}
+\subsection{零状态响应：指初始状态为零，而输入不为零
+所产生的电路响应}
+\begin{figure}[htbp]
+    \centering
+    \includegraphics[width=0.5\textwidth]{img2.png}
+    \caption{零状态响应}
+    \label{fig:3}
+\end{figure}
+\subsection{完全响应：指输入与初始状态均不为零时所产
+生的电路响应。
+}
 
 \section{主要仪器设备}
-
-\subsection{}
-
-\subsection{}
-
-\subsection{}
+示波器,电工实验台,电路板,电容,电阻,直流电源
 
 \section{实验内容}
 
-\subsection{实验内容1的实验方法、步骤、数据记录、数据处理、实验结果分析}
+\subsection{实验任务1}
+选择元件箱实验板上的R、C元件，令 R=1KΩ，C=1000µf(电解电容, 注意极性)
+及开关组成如图所示的RC充放电电路，观察RC一阶电路零状态、零输入和全响应波形、测量时间常数:
+
+注意三个过程
+\begin{enumerate}
+    \item 零状态响应
+    \item 零输入响应
+    \item 全响应
+\end{enumerate}
+\begin{figure}[htbp]
+    \centering
+    \includegraphics[width=0.5\textwidth]{img4.png}
+    \caption{实验电路图}
+    \label{fig:5}
+\end{figure}
+其中直流电压源5~10V,示波器采用直流耦合方式.示波器暂停后采用CURSOR功能测量时间常数
 
 \subsection{实验内容2的实验方法、步骤、数据记录、数据处理、实验结果分析}
 
